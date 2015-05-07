@@ -1,0 +1,477 @@
+<!--
+<% 
+  titulo = @area.nome
+  descricao = @area.metadescription
+  keywords = @area.metakeywords
+  image_share = ""
+%>
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title><%= titulo %></title>
+    <meta name="nome" content="<%= titulo %>">
+    <meta name="description" content="<%= descricao %>">
+    <meta name="keywords" content="<%= keywords %>">
+    <meta property="fb:admins" content="100000108768969,1382852454">
+    <meta property="fb:app_id" content="1642478545890728">
+    <meta property="og:title" content="<%= titulo %>">
+    <meta property="og:description" content="<%= descricao %>">
+    <meta property="og:image" content="<%= image_share %>">
+    <meta property="og:type" content="website">
+    <meta property="og:article:publisher" content="https://www.facebook.com/vejasp" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="VEJA SP">
+    <meta property="twitter:title" content="<%= titulo %>">
+    <meta property="twitter:description" content="<%= descricao %>">
+    <meta property="twitter:image" content="<%= image_share %>">
+    <meta property="twitter:site" content="@vejasp">
+    <link rel="shortcut icon" href="http://vejasp.abrilm.com.br/images/favicon.ico">
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,700" rel=stylesheet type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Leckerli+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- ####################################### CSS ####################################### -->
+
+    <link href="stylesheets/dia-dos-namorados.bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="stylesheets/touchcarousel.css" rel="stylesheet" type="text/css">
+    <link href="stylesheets/minimal-light-skin/minimal-light-skin.css" rel="stylesheet" type="text/css">
+    <link href="stylesheets/dia-dos-namorados.css" rel="stylesheet" type="text/css">
+
+  </head>
+  <body data-passo="passo3">
+    <div id="overlay"></div>
+    <div id="produto_overlay" class="col-md-12 col-sm-12 col-xs-12">
+      <span class="fechar"></span>
+      <img src="" alt="" class="imagem">
+      <ul class="dados">
+        <li>
+          <h4></h4>
+          <h5></h5>
+          <div class="preco">R$ <b></b></div>
+        </li>
+        <li>
+          <div class="onde">ONDE:</div>
+          <h5></h5>
+          <h6></h6>
+        </li>
+      </ul>
+    </div>
+
+    <header>
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "http://connect.facebook.net/pt_BR/all.js#xfbml=1&appId=1642478545890728";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+      <div class="container">
+        <div class="row">
+          <div id="topo">
+            <div class="col-md-3 col-sm-3 col-xs-4">
+              <h2><a href="http://vejasp.abril.com.br" onclick="_gaq.push(['SITE._trackEvent','dia-dos-namorados-2014','Topo', 'VEJA SÃO PAULO'])">VEJA SP</a></h2>
+            </div>
+            <div class="col-md-2 hidden-sm hidden-xs"></div>
+            <div class="col-md-4 col-sm-5 hidden-xs">
+              <ul class="redes">
+                <li>
+                  <div class="fb-share-button" data-href="http://vejasp.abril.com.br/especiais/restaurant-week-sao-paulo" data-type="button" onclick="_gaq.push(['SITE._trackEvent','dia-dos-namorados-2014','Topo', 'bt-facebook'])"></div>
+                </li>
+                <li>
+                  <a href="https://twitter.com/share" data-url="http://vejasp.abril.com.br/especiais/restaurant-week-sao-paulo" class="twitter-share-button" data-text="Restaurant Week | VEJA SP" data-via="vejasp" data-lang="pt" data-count="none" onclick="_gaq.push(['SITE._trackEvent','dia-dos-namorados-2014','Topo', 'bt-twitter'])">Tweetar</a>
+                  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','twitter-wjs');</script>
+                </li>
+                <li>
+                  <div class="g-plus" data-href="http://vejasp.abril.com.br/especiais/restaurant-week-sao-paulo" data-action="share" data-annotation="none" data-height="20" onclick="_gaq.push(['SITE._trackEvent','dia-dos-namorados-2014','Topo', 'bt-gplus'])"></div>
+                  <script>window.___gcfg={lang:'pt-BR'};(function(){var po=document.createElement('script');po.type='text/javascript';po.async=true;po.src='https://apis.google.com/js/platform.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(po,s);})();</script>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-8">
+              <div class="apoio">
+                <div id="abrAD_button"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="hidden-xs" >
+        <div class="container">
+          <div class="limite">
+            <ul>
+              <li><a href="#" onclick="_gaq.push(['SITE._trackEvent','dia-dos-namorados-2014','Topo', $(this).text()])">Outros links</a></li>
+              <!-- 
+              <li><a href="http://vejasp.abril.com.br/blogs/arnaldo-lorencato/2014/03/21/restaurant-week-decifrar-cardapio-menu/">Como decifrar os menus</a></li>
+              <li><a href="http://vejasp.abril.com.br/blogs/arnaldo-lorencato/2014/03/21/restaurant-week-top-ten/">Os 10 melhores</a></li>
+              <li>
+                <span class="mais">E MAIS</span>
+                <ul class="submenu">
+                  <li><a href="http://vejasp.abril.com.br/blogs/arnaldo-lorencato/2014/03/21/restaurant-week-ferramenta-economia/">Como usar a ferramente especial de VEJA SÃO PAULO e economizar</a></li>
+                  <li><a href="http://vejasp.abril.com.br/blogs/arnaldo-lorencato/2014/03/21/restaurant-week-5-lugares-onde-a-agua-e-cortesia/">Água na faixa</a></li>
+                  <li><a href="http://vejasp.abril.com.br/blogs/arnaldo-lorencato/2014/03/21/restaurant-week-estacionamento-gratis-cortesia/">Estacionamento grátis</a></li>
+                </ul>
+              </li>
+              -->
+            </ul>
+          </div>
+        </div>
+      </nav>  
+    </header>
+
+    <section id="passo3">
+      <div class="container">
+        <div class="publicidade"><div id="abrAD_leaderboard1"></div></div>
+        <div class="content-passo3">
+
+          <div class="topo_mobile hidden-lg hidden-md col-sm-12 col-xs-12">
+            <h1>Especial dia dos namorados</h1>
+            <ul id="selects">
+              <li>
+                <div class="padding">
+                  <div class="wrap-select">
+                  <select data-item="cabeca" name="" id="">
+                    <option value="1" data-texto="Básico" selected="selected" class="homem">BÁSICO</option>
+                    <option value="1" data-texto="Básico" selected="selected" class="mulher">BÁSICA</option>
+                    <option value="2" data-texto="Esportista">ESPORTISTA</option>
+                    <option value="3" data-texto="Hipster">HIPSTER</option>
+                    <option value="4" data-texto="Sofisticado" class="homem">SOFISTICADO</option>
+                    <option value="4" data-texto="Sofisticado" class="mulher">SOFISTICADA</option>
+                  </select>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="padding">
+                  <div class="wrap-select">
+                    <select data-item="tronco" name="" id="">
+                      <option value="1" data-texto="Asiática" selected="selected">COMIDA ASIÁTICA</option>
+                      <option value="2" data-texto="Brasileira">COMIDA BRASILEIRA</option>
+                      <option value="3" data-texto="Francesa">COMIDA FRANCESA</option>
+                      <option value="4" data-texto="Italiana">COMIDA ITALIANA</option>
+                    </select>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="padding">
+                  <div class="wrap-select">
+                    <select data-item="pernas" name="" id="">
+                      <option value="1" data-texto="Atividade ao ar livre" selected="selected">ATIVIDADE AO AR LIVRE</option>
+                      <option value="2" data-texto="Arte">ARTES</option>
+                      <option value="3" data-texto="Música">MÚSICA</option>
+                      <option value="4" data-texto="Sair da Rotina">SAIR DA ROTINA</option>
+                    </select>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div id="itens">
+            
+            <!-- BONECO HOMEM -->
+            <ul class="boneco boneco-homem">
+              <li class="cabeca">
+                <div class="slider_homem_cabeca imagem touchcarousel minimal-light col-md-3 hidden-sm hidden-xs">
+                  <ul class="touchcarousel-container imagens">
+                    <li class="touchcarousel-item"><img src="./images/bonecos/cabeca/basico-masc.png" alt=""></li>
+                    <li class="touchcarousel-item"><img src="./images/bonecos/cabeca/esportista-masc.png" alt=""></li>
+                    <li class="touchcarousel-item"><img src="./images/bonecos/cabeca/hipster-masc.png" alt=""></li>
+                    <li class="touchcarousel-item"><img src="./images/bonecos/cabeca/sofisticado-masc.png" alt=""></li>
+                  </ul>
+                  <ul class="legenda trocar_li">
+                    <li class="ativo" style="display: block;" data-texto="Básico"><p>BÁSICO</p></li>
+                    <li data-texto="Esportista"><p>ESPORTISTA</p></li>
+                    <li data-texto="Hipster"><p>HIPSTER</p></li>
+                    <li data-texto="Sofisticado"><p>SOFISTICADO</p></li>
+                  </ul>
+                </div>
+                <div class="produtos col-md-9 col-sm-12 hidden-xs">
+                  <ul class="trocar_li">
+                    <li class="ativo" style="display:block;"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
+                <div class="produtos_mobile hidden-lg hidden-md hidden-sm col-xs-11">
+                  <ul class="trocar_li">
+                    <li class="ativo touchcarousel minimal-light mobile_carrossel" style="display:block;"></li>
+                    <li class="touchcarousel minimal-light mobile_carrossel"></li>
+                    <li class="touchcarousel minimal-light mobile_carrossel"></li>
+                    <li class="touchcarousel minimal-light mobile_carrossel"></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="tronco">
+                <div class="slider_homem_tronco imagem touchcarousel minimal-light col-md-3 hidden-sm hidden-xs">
+                  <ul class="touchcarousel-container imagens">
+                    <li class="touchcarousel-item"><img src="./images/bonecos/corpo/asiatica-masc.png" alt=""></li>
+                    <li class="touchcarousel-item"><img src="./images/bonecos/corpo/brasileira-masc.png" alt=""></li>
+                    <li class="touchcarousel-item"><img src="./images/bonecos/corpo/francesa-masc.png" alt=""></li>
+                    <li class="touchcarousel-item"><img src="./images/bonecos/corpo/italiana-masc.png" alt=""></li>
+                  </ul>
+                  <ul class="legenda trocar_li">
+                    <li class="ativo" style="display: block;" data-texto="Asiática"><p>COMIDA</p><br><p>ASIÁTICA</p></li>
+                    <li data-texto="Brasileira"><p>COMIDA</p><br><p>BRASILEIRA</p></li>
+                    <li data-texto="Francesa"><p>COMIDA</p><br><p>FRANCESA</p></li>
+                    <li data-texto="Italiana"><p>COMIDA</p><br><p> ITALIANA</p></li>
+                  </ul>
+                </div>
+                <div class="produtos col-md-9 col-sm-12 hidden-xs">
+                  <ul class="trocar_li">
+                    <li class="ativo" style="display:block;"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
+                <div class="produtos_mobile hidden-lg hidden-md hidden-sm col-xs-11">
+                  <ul class="trocar_li">
+                    <li class="ativo touchcarousel minimal-light mobile_carrossel" style="display:block;"></li>
+                    <li class="touchcarousel minimal-light mobile_carrossel"></li>
+                    <li class="touchcarousel minimal-light mobile_carrossel"></li>
+                    <li class="touchcarousel minimal-light mobile_carrossel"></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="pernas">
+                <div class="slider_homem_pernas imagem touchcarousel minimal-light col-md-3 hidden-sm hidden-xs">
+                  <ul class="touchcarousel-container imagens">
+                    <li class="touchcarousel-item"><img src="./images/bonecos/pernas/ar-livre-masc.png" alt=""></li>
+                    <li class="touchcarousel-item"><img src="./images/bonecos/pernas/artes-masc.png" alt=""></li>
+                    <li class="touchcarousel-item"><img src="./images/bonecos/pernas/musica-masc.PNG" alt=""></li>
+                    <li class="touchcarousel-item"><img src="./images/bonecos/pernas/sair-rotina-masc.png" alt=""></li>
+                  </ul>
+                  <ul class="legenda trocar_li">
+                    <li class="ativo" style="display: block;" data-texto="Atividade ao ar livre"><p>ATIVIDADE </p><br><p>AO AR LIVRE</p></li>
+                    <li data-texto="Arte"><p>ARTES</p></li>
+                    <li data-texto="Música"><p>MÚSICA</p></li>
+                    <li data-texto="Sair da Rotina"><p>SAIR DA ROTINA</p></li>
+                  </ul>
+                </div>
+                <div class="produtos col-md-9 col-sm-12 hidden-xs">
+                  <ul class="trocar_li">
+                    <li class="ativo" style="display:block;"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
+                <div class="produtos_mobile hidden-lg hidden-md hidden-sm col-xs-11">
+                  <ul class="trocar_li">
+                    <li class="ativo touchcarousel minimal-light mobile_carrossel" style="display:block;"></li>
+                    <li class="touchcarousel minimal-light mobile_carrossel"></li>
+                    <li class="touchcarousel minimal-light mobile_carrossel"></li>
+                    <li class="touchcarousel minimal-light mobile_carrossel"></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+
+            <!-- BONECO MULHER -->
+            <ul class="boneco boneco-mulher">
+              <li class="cabeca">
+                <div class="slider_mulher_cabeca imagem touchcarousel minimal-light col-md-3 hidden-sm hidden-xs">
+                  <ul class="touchcarousel-container imagens">
+                    <li class="touchcarousel-item"><img src="./images/bonecos/cabeca/basico-fem.png" alt=""></li>
+                    <li class="touchcarousel-item"><img src="./images/bonecos/cabeca/esportista-fem.png" alt=""></li>
+                    <li class="touchcarousel-item"><img src="./images/bonecos/cabeca/hipster-fem.png" alt=""></li>
+                    <li class="touchcarousel-item"><img src="./images/bonecos/cabeca/sofisticado-fem.png" alt=""></li>
+                  </ul>
+                   <ul class="legenda trocar_li">
+                    <li class="ativo" style="display: block;" data-texto="Básico"><p>BÁSICA</p></li>
+                    <li data-texto="Esportista"><p>ESPORTISTA</p></li>
+                    <li data-texto="Hipster"><p>HIPSTER</p></li>
+                    <li data-texto="Sofisticado"><p>SOFISTICADA</p></li>
+                  </ul>
+                </div>
+                <div class="produtos col-md-9 col-sm-12 hidden-xs">
+                   <ul class="trocar_li">
+                    <li class="ativo" style="display:block;"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
+                <div class="produtos_mobile hidden-lg hidden-md hidden-sm col-xs-11">
+                   <ul class="trocar_li">
+                    <li class="ativo touchcarousel minimal-light mobile_carrossel" style="display:block;"></li>
+                    <li class="touchcarousel minimal-light mobile_carrossel"></li>
+                    <li class="touchcarousel minimal-light mobile_carrossel"></li>
+                    <li class="touchcarousel minimal-light mobile_carrossel"></li>
+                  </ul>
+               </div>
+              </li>
+              <li class="tronco">
+                <div class="slider_mulher_tronco imagem touchcarousel minimal-light col-md-3 hidden-sm hidden-xs">
+                  <ul class="touchcarousel-container imagens">
+                    <li class="touchcarousel-item"><img src="./images/bonecos/corpo/asiatica-fem.png" alt=""></li>
+                    <li class="touchcarousel-item"><img src="./images/bonecos/corpo/brasileira-fem.png" alt=""></li>
+                    <li class="touchcarousel-item"><img src="./images/bonecos/corpo/francesa-fem.png" alt=""></li>
+                    <li class="touchcarousel-item"><img src="./images/bonecos/corpo/italiana-fem.png" alt=""></li>
+                  </ul>
+                  <ul class="legenda trocar_li">
+                    <li class="ativo" style="display: block;" data-texto="Asiática"><p>COMIDA</p><br><p>ASIÁTICA</p></li>
+                    <li data-texto="Brasileira"><p>COMIDA</p><br><p>BRASILEIRA</p></li>
+                    <li data-texto="Francesa"><p>COMIDA</p><br><p>FRANCESA</p></li>
+                    <li data-texto="Italiana"><p>COMIDA</p><br><p>ITALIANA</p></li>
+                  </ul>
+                </div>
+                <div class="produtos col-md-9 col-sm-12 hidden-xs">
+                   <ul class="trocar_li">
+                    <li class="ativo" style="display:block;"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
+                <div class="produtos_mobile hidden-lg hidden-md hidden-sm col-xs-11">
+                   <ul class="trocar_li">
+                    <li class="ativo touchcarousel minimal-light mobile_carrossel" style="display:block;"></li>
+                    <li class="touchcarousel minimal-light mobile_carrossel"></li>
+                    <li class="touchcarousel minimal-light mobile_carrossel"></li>
+                    <li class="touchcarousel minimal-light mobile_carrossel"></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="pernas">
+                <div class="slider_mulher_pernas imagem touchcarousel minimal-light col-md-3 hidden-sm hidden-xs">
+                  <ul class="touchcarousel-container imagens">
+                    <li class="touchcarousel-item"><img src="./images/bonecos/pernas/ar-livre-fem.png" alt=""></li>
+                    <li class="touchcarousel-item"><img src="./images/bonecos/pernas/artes-fem.png" alt=""></li>
+                    <li class="touchcarousel-item"><img src="./images/bonecos/pernas/musica-fem.png" alt=""></li>
+                    <li class="touchcarousel-item"><img src="./images/bonecos/pernas/sair-rotina-fem.png" alt=""></li>
+                  </ul>
+                  <ul class="legenda trocar_li">
+                    <li class="ativo" style="display: block;" data-texto="Atividade ao ar livre"><p>ATIVIDADE AO</p><br><p>AR LIVRE</p></li>
+                    <li data-texto="Arte"><p>ARTES</p></li>
+                    <li data-texto="Música"><p>MÚSICA</p></li>
+                    <li data-texto="Sair da Rotina"><p>SAIR DA ROTINA</p></li>
+                  </ul>
+                </div>
+                <div class="produtos col-md-9 col-sm-12 hidden-xs">
+                   <ul class="trocar_li">
+                    <li class="ativo" style="display:block;"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
+                <div class="produtos_mobile hidden-lg hidden-md hidden-sm col-xs-11">
+                   <ul class="trocar_li">
+                    <li class="ativo touchcarousel minimal-light mobile_carrossel" style="display:block;"></li>
+                    <li class="touchcarousel minimal-light mobile_carrossel"></li>
+                    <li class="touchcarousel minimal-light mobile_carrossel"></li>
+                    <li class="touchcarousel minimal-light mobile_carrossel"></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+
+
+          <div class="botoes col-md-12 col-sm-12 col-xs-12">
+            <div class="botao voltar hidden-xs">Refazer</div>
+            <div class="botao todas-sugestoes">Ver todas as sugestões</div>
+            <div class="botao voltar hidden-lg hidden-md hidden-sm">Refazer</div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <section class="estabelecimentos">
+      <span class="voltar"></span>
+      
+      <section id="filtros">
+
+        <div class="container">
+        <div class="loader"></div>
+        <div class="container1">
+          <div class="row">
+            
+            <div class="hidden-md hidden-lg hidden-sm col-xs-12 filtro-mobile">Presentes</div>
+            
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <ul class="tipos hidden-xs">
+                <li class="col-md-4 col-sm-4 col-xs-12 selecionado" data-filtroPrimario="Presente">Presentes</li>
+                <li class="col-md-4 col-sm-4 col-xs-12" data-filtroPrimario="Restaurante">Restaurantes</li>
+                <li class="col-md-4 col-sm-4 col-xs-12" data-filtroPrimario="Passeio">Passeios</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+          <div class="row selects">
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <select name="" id="filtroTipo">
+                <option value="todos">Todos os tipos</option>
+              </select>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <select name="" id="filtroBairro">
+                <option value="todos">Todos os bairros</option>
+              </select>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <select name="" id="filtroPreco">
+                <option value="todos">Todos os preços</option>
+              </select>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+      <section id="meio">
+        <div class="container">
+          <div class="mensagem">
+            <div class="no-results">Não foi encontrado nenhum dado com os filtros selecionados. <span>Zerar filtros</span></div>
+            <div class="erro">Carregando dados, aguarde, ou clique <span>aqui</span> para recarregar a página.</div>
+          </div>
+          <ul id="estabelecimentos"></ul>
+        </div>
+
+      </section>
+
+    </section>
+
+
+    <!-- ####################################### JS ####################################### -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="./javascripts/jquery.template.js"></script>
+    <script src="./javascripts/jquery.touchcarousel-1.2.min.js"></script>
+    <script src="./javascripts/lazyload.js"></script>
+    <script src="./javascripts/dados_tops.js"></script>
+    <script src="./javascripts/dados.js"></script>
+    <script src="./javascripts/functions.js"></script>
+
+    <script src="http://vejasp.abril.com.br/libc/ads/abrad.min.js?#{Time.now.to_i}" async="true"></script>
+    <script src="http://vejasp.abril.com.br/libc/metrics/site/cm_vejasp.js"></script>
+
+    <script type="text/javascript">
+      var ads_json = $(window).width() < 767 ? 'ads_vejasp_smartphone.json' : 'ads_vejasp.json';
+      ads_json += '?<%= Time.now.to_i %>';
+      var abrConfSite = {
+        "abrAdMap" : "http://vejasp.abril.com.br/libc/ads/" + ads_json,
+        "abrAdsArea" : "vejasaopaulo/dia-dos-namorados/"
+      };
+    </script>
+
+  </body>
+</html>

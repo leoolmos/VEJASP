@@ -1,0 +1,153 @@
+<!--
+<% 
+  titulo = @area.nome
+  descricao = @area.metadescription
+  keywords = @area.metakeywords
+  image_share = ""
+%>
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title><%= titulo %></title>
+    <meta name="nome" content="<%= titulo %>">
+    <meta name="description" content="<%= descricao %>">
+    <meta name="keywords" content="<%= keywords %>">
+    <meta property="fb:admins" content="100000108768969,1382852454">
+    <meta property="fb:app_id" content="1642478545890728">
+    <meta property="og:title" content="<%= titulo %>">
+    <meta property="og:description" content="<%= descricao %>">
+    <meta property="og:image" content="<%= image_share %>">
+    <meta property="og:type" content="website">
+    <meta property="og:article:publisher" content="https://www.facebook.com/vejasp" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="VEJA SP">
+    <meta property="twitter:title" content="<%= titulo %>">
+    <meta property="twitter:description" content="<%= descricao %>">
+    <meta property="twitter:image" content="<%= image_share %>">
+    <meta property="twitter:site" content="@vejasp">
+    <link rel="shortcut icon" href="http://vejasp.abrilm.com.br/images/favicon.ico">
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,700" rel=stylesheet type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Leckerli+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- ####################################### CSS ####################################### -->
+
+    <link href="stylesheets/dia-dos-namorados.bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="stylesheets/dia-dos-namorados.css" rel="stylesheet" type="text/css">
+
+  </head>
+  <body>
+    <header>
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "http://connect.facebook.net/pt_BR/all.js#xfbml=1&appId=1642478545890728";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+      <div class="container">
+        <div class="row">
+          <div id="topo">
+            <div class="col-md-3 col-sm-3 col-xs-4">
+              <h2><a href="http://vejasp.abril.com.br" onclick="_gaq.push(['SITE._trackEvent','dia-dos-namorados-2014','Topo', 'VEJA SÃO PAULO'])">VEJA SP</a></h2>
+            </div>
+            <div class="col-md-2 hidden-sm hidden-xs"></div>
+            <div class="col-md-4 col-sm-5 hidden-xs">
+              <ul class="redes">
+                <li>
+                  <div class="fb-share-button" data-href="http://vejasp.abril.com.br/especiais/restaurant-week-sao-paulo" data-type="button" onclick="_gaq.push(['SITE._trackEvent','dia-dos-namorados-2014','Topo', 'bt-facebook'])"></div>
+                </li>
+                <li>
+                  <a href="https://twitter.com/share" data-url="http://vejasp.abril.com.br/especiais/restaurant-week-sao-paulo" class="twitter-share-button" data-text="Restaurant Week | VEJA SP" data-via="vejasp" data-lang="pt" data-count="none" onclick="_gaq.push(['SITE._trackEvent','dia-dos-namorados-2014','Topo', 'bt-twitter'])">Tweetar</a>
+                  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','twitter-wjs');</script>
+                </li>
+                <li>
+                  <div class="g-plus" data-href="http://vejasp.abril.com.br/especiais/restaurant-week-sao-paulo" data-action="share" data-annotation="none" data-height="20" onclick="_gaq.push(['SITE._trackEvent','dia-dos-namorados-2014','Topo', 'bt-gplus'])"></div>
+                  <script>window.___gcfg={lang:'pt-BR'};(function(){var po=document.createElement('script');po.type='text/javascript';po.async=true;po.src='https://apis.google.com/js/platform.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(po,s);})();</script>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-8">
+              <div class="apoio">
+                <div id="abrAD_button"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="hidden-xs" >
+        <div class="container">
+          <div class="limite">
+            <ul>
+              <li><a href="#" onclick="_gaq.push(['SITE._trackEvent','dia-dos-namorados-2014','Topo', $(this).text()])">Outros links</a></li>
+              <!-- 
+              <li><a href="http://vejasp.abril.com.br/blogs/arnaldo-lorencato/2014/03/21/restaurant-week-decifrar-cardapio-menu/">Como decifrar os menus</a></li>
+              <li><a href="http://vejasp.abril.com.br/blogs/arnaldo-lorencato/2014/03/21/restaurant-week-top-ten/">Os 10 melhores</a></li>
+              <li>
+                <span class="mais">E MAIS</span>
+                <ul class="submenu">
+                  <li><a href="http://vejasp.abril.com.br/blogs/arnaldo-lorencato/2014/03/21/restaurant-week-ferramenta-economia/">Como usar a ferramente especial de VEJA SÃO PAULO e economizar</a></li>
+                  <li><a href="http://vejasp.abril.com.br/blogs/arnaldo-lorencato/2014/03/21/restaurant-week-5-lugares-onde-a-agua-e-cortesia/">Água na faixa</a></li>
+                  <li><a href="http://vejasp.abril.com.br/blogs/arnaldo-lorencato/2014/03/21/restaurant-week-estacionamento-gratis-cortesia/">Estacionamento grátis</a></li>
+                </ul>
+              </li>
+              -->
+            </ul>
+          </div>
+        </div>
+      </nav>  
+    </header>
+
+    <section id="abre">
+      <div class="container">
+        <div class="publicidade"><div id="abrAD_leaderboard1"></div></div>
+        <div class="content-abre">
+          <h1 class="col-md-12 col-sm-12 col-xs-12">Especial Dia dos Namorados</h1>
+          <h3 class="col-md-3 col-sm-12 col-xs-12">No jogo da sedução, sai na frente quem conhece bem os gostos do parceiro. Se resta alguma dúvida ou se você tira de letra as preferências de seu amor, nossa lista com opções de presentes, restaurantes e passeios vai ajudá-lo neste Dia dos Namorados</h3>
+          <div id="escolha" class="col-md-9 col-sm-12 col-xs-12">
+            <h4>O meu amor é:</h4>
+            <ul>
+              <li class="col-md-6 col-sm-6 col-xs-12">
+                <span class="ico" onclick="_gaq.push(['SITE._trackEvent','dia-dos-namorados-2014','Home', 'filtro-mulher'])">Mulher</span>
+              </li>
+              <li class="col-md-6 col-sm-6 col-xs-12">
+                <span class="ico" onclick="_gaq.push(['SITE._trackEvent','dia-dos-namorados-2014','Home', 'filtro-homem'])">Homem</span>
+              </li>
+            </ul>
+            <div class="botao" onclick="_gaq.push(['SITE._trackEvent','dia-dos-namorados-2014','Home', 'bt-ok'])">OK</div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- ####################################### JS ####################################### -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="javascripts/jquery.template.js"></script>
+    <script src="javascripts/lazyload.js"></script>
+    <script src="javascripts/functions.js"></script>
+
+    <script src="http://vejasp.abril.com.br/libc/ads/abrad.min.js?#{Time.now.to_i}" async="true"></script>
+    <script src="http://vejasp.abril.com.br/libc/metrics/site/cm_vejasp.js"></script>
+
+    <script type="text/javascript">
+      var ads_json = $(window).width() < 767 ? 'ads_vejasp_smartphone.json' : 'ads_vejasp.json';
+      ads_json += '?<%= Time.now.to_i %>';
+      var abrConfSite = {
+        "abrAdMap" : "http://vejasp.abril.com.br/libc/ads/" + ads_json,
+        "abrAdsArea" : "vejasaopaulo/dia-dos-namorados/"
+      };
+    </script>
+
+  </body>
+</html>

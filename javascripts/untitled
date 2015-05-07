@@ -1,0 +1,42 @@
+dados_top = {
+	"homem": [{
+	  	"cabeca": [{
+		    "basico": "Básico",
+		    "esportista": "Esportista",
+		    "hipster": "Hipster",
+		    "sofisticado": "Sofisticado"
+	  	}],
+	  	"tronco": [{
+		    "asiatica": "Asiática",
+		    "brasileira": "Brasileira",
+		    "francesa": "Francesa",
+		    "italiana": "Italiana"
+	  	}],
+	  	"pernas": [{
+		    "ar_livre": "Atividade ao ar livre",
+		    "artes": "Arte",
+		    "musica": "Música",
+		    "sair_rotina": "Sair da Rotina"
+	  	}]
+	}],
+	"mulher": [{
+	  	"cabeca": [{
+		    "basico": "Básica",
+		    "esportista": "Esportista",
+		    "hipster": "Hipster",
+		    "sofisticado": "Sofisticada"
+	  	}],
+	  	"tronco": [{
+		    "asiatica": "Asiática",
+		    "brasileira": "Brasileira",
+		    "francesa": "Francesa",
+		    "italiana": "Italiana"
+	  	}],
+	  	"pernas": [{
+		    "ar_livre": "Atividade ao ar livre",
+		    "artes": "Arte",
+		    "musica": "Música",
+		    "sair_rotina": "Sair da Rotina"
+	  	}]
+	}]
+}
